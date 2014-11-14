@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-
+  'use strict';
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     concat: {
@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       }
     },
     jshint: {
-      files: ['Gruntfile.js', 'app/**/*.js'],
+      files: ['Gruntfile.js', 'app/**/*.js','!vendor/**/*.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
     jade: {
       compile: {
         files: {
-          "dist/index.html": ["app/**/*.jade"]
+          'dist/index.html': ['app/**/*.jade']
         }
       }
     },
