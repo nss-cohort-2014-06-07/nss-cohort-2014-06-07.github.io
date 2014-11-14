@@ -1,0 +1,161 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/node/bin/node',
+1 verbose cli   '/usr/local/node/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-contrib-clean',
+1 verbose cli   'grunt0contrib-copy',
+1 verbose cli   '--save-dev' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose cache add [ 'grunt-contrib-clean', null ]
+6 verbose cache add name=undefined spec="grunt-contrib-clean" args=["grunt-contrib-clean",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'grunt-contrib-clean',
+7 verbose parsed url   path: 'grunt-contrib-clean',
+7 verbose parsed url   href: 'grunt-contrib-clean' }
+8 verbose cache add [ 'grunt0contrib-copy', null ]
+9 verbose cache add name=undefined spec="grunt0contrib-copy" args=["grunt0contrib-copy",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'grunt0contrib-copy',
+10 verbose parsed url   path: 'grunt0contrib-copy',
+10 verbose parsed url   href: 'grunt0contrib-copy' }
+11 silly lockFile 862f7e58-grunt-contrib-clean grunt-contrib-clean
+12 verbose lock grunt-contrib-clean /Users/kjones/.npm/862f7e58-grunt-contrib-clean.lock
+13 silly lockFile 129d5e7c-grunt0contrib-copy grunt0contrib-copy
+14 verbose lock grunt0contrib-copy /Users/kjones/.npm/129d5e7c-grunt0contrib-copy.lock
+15 silly lockFile 862f7e58-grunt-contrib-clean grunt-contrib-clean
+16 silly lockFile 862f7e58-grunt-contrib-clean grunt-contrib-clean
+17 silly lockFile 129d5e7c-grunt0contrib-copy grunt0contrib-copy
+18 silly lockFile 129d5e7c-grunt0contrib-copy grunt0contrib-copy
+19 verbose addNamed [ 'grunt-contrib-clean', '' ]
+20 verbose addNamed [ null, '*' ]
+21 silly lockFile 8bff91c3-grunt-contrib-clean grunt-contrib-clean@
+22 verbose lock grunt-contrib-clean@ /Users/kjones/.npm/8bff91c3-grunt-contrib-clean.lock
+23 verbose addNamed [ 'grunt0contrib-copy', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile 5fdf9616-grunt0contrib-copy grunt0contrib-copy@
+26 verbose lock grunt0contrib-copy@ /Users/kjones/.npm/5fdf9616-grunt0contrib-copy.lock
+27 silly addNameRange { name: 'grunt-contrib-clean', range: '*', hasData: false }
+28 silly addNameRange { name: 'grunt0contrib-copy', range: '*', hasData: false }
+29 verbose request where is /grunt0contrib-copy
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id ff02140c212386b9
+32 verbose url raw /grunt0contrib-copy
+33 verbose url resolving [ 'https://registry.npmjs.org/', './grunt0contrib-copy' ]
+34 verbose url resolved https://registry.npmjs.org/grunt0contrib-copy
+35 verbose request where is https://registry.npmjs.org/grunt0contrib-copy
+36 info trying registry request attempt 1 at 17:22:24
+37 http GET https://registry.npmjs.org/grunt0contrib-copy
+38 verbose request where is /grunt-contrib-clean
+39 verbose request registry https://registry.npmjs.org/
+40 verbose url raw /grunt-contrib-clean
+41 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-contrib-clean' ]
+42 verbose url resolved https://registry.npmjs.org/grunt-contrib-clean
+43 verbose request where is https://registry.npmjs.org/grunt-contrib-clean
+44 info trying registry request attempt 1 at 17:22:24
+45 verbose etag "3CUK3HJAOA30V2JI2O7ARWEKS"
+46 http GET https://registry.npmjs.org/grunt-contrib-clean
+47 http 304 https://registry.npmjs.org/grunt-contrib-clean
+48 silly registry.get cb [ 304,
+48 silly registry.get   { date: 'Fri, 14 Nov 2014 23:22:24 GMT',
+48 silly registry.get     server: 'Apache',
+48 silly registry.get     via: '1.1 varnish',
+48 silly registry.get     'last-modified': 'Fri, 14 Nov 2014 23:22:24 GMT',
+48 silly registry.get     'cache-control': 'max-age=60',
+48 silly registry.get     etag: '"3CUK3HJAOA30V2JI2O7ARWEKS"',
+48 silly registry.get     age: '24',
+48 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+48 silly registry.get     'x-cache': 'HIT',
+48 silly registry.get     'x-cache-hits': '1',
+48 silly registry.get     'x-timer': 'S1416007344.663784,VS0,VE1',
+48 silly registry.get     vary: 'Accept',
+48 silly registry.get     'content-length': '0',
+48 silly registry.get     'keep-alive': 'timeout=10, max=50',
+48 silly registry.get     connection: 'Keep-Alive' } ]
+49 verbose etag https://registry.npmjs.org/grunt-contrib-clean from cache
+50 silly addNameRange number 2 { name: 'grunt-contrib-clean', range: '*', hasData: true }
+51 silly addNameRange versions [ 'grunt-contrib-clean',
+51 silly addNameRange   [ '0.1.0',
+51 silly addNameRange     '0.2.0',
+51 silly addNameRange     '0.3.0',
+51 silly addNameRange     '0.3.1',
+51 silly addNameRange     '0.3.2',
+51 silly addNameRange     '0.4.0',
+51 silly addNameRange     '0.4.1',
+51 silly addNameRange     '0.5.0',
+51 silly addNameRange     '0.6.0',
+51 silly addNameRange     '0.4.0-a',
+51 silly addNameRange     '0.4.0-rc5',
+51 silly addNameRange     '0.4.0-rc6' ] ]
+52 verbose addNamed [ 'grunt-contrib-clean', '0.6.0' ]
+53 verbose addNamed [ '0.6.0', '0.6.0' ]
+54 silly lockFile 0a668ef6-grunt-contrib-clean-0-6-0 grunt-contrib-clean@0.6.0
+55 verbose lock grunt-contrib-clean@0.6.0 /Users/kjones/.npm/0a668ef6-grunt-contrib-clean-0-6-0.lock
+56 http 404 https://registry.npmjs.org/grunt0contrib-copy
+57 verbose headers { date: 'Fri, 14 Nov 2014 23:22:24 GMT',
+57 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+57 verbose headers   'content-type': 'application/json',
+57 verbose headers   'cache-control': 'max-age=0',
+57 verbose headers   'content-length': '52',
+57 verbose headers   'accept-ranges': 'bytes',
+57 verbose headers   via: '1.1 varnish',
+57 verbose headers   age: '0',
+57 verbose headers   'x-served-by': 'cache-atl6223-ATL',
+57 verbose headers   'x-cache': 'MISS',
+57 verbose headers   'x-cache-hits': '0',
+57 verbose headers   'x-timer': 'S1416007344.657944,VS0,VE24',
+57 verbose headers   'keep-alive': 'timeout=10, max=50',
+57 verbose headers   connection: 'Keep-Alive' }
+58 silly registry.get cb [ 404,
+58 silly registry.get   { date: 'Fri, 14 Nov 2014 23:22:24 GMT',
+58 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+58 silly registry.get     'content-type': 'application/json',
+58 silly registry.get     'cache-control': 'max-age=0',
+58 silly registry.get     'content-length': '52',
+58 silly registry.get     'accept-ranges': 'bytes',
+58 silly registry.get     via: '1.1 varnish',
+58 silly registry.get     age: '0',
+58 silly registry.get     'x-served-by': 'cache-atl6223-ATL',
+58 silly registry.get     'x-cache': 'MISS',
+58 silly registry.get     'x-cache-hits': '0',
+58 silly registry.get     'x-timer': 'S1416007344.657944,VS0,VE24',
+58 silly registry.get     'keep-alive': 'timeout=10, max=50',
+58 silly registry.get     connection: 'Keep-Alive' } ]
+59 silly lockFile 5fdf9616-grunt0contrib-copy grunt0contrib-copy@
+60 silly lockFile 5fdf9616-grunt0contrib-copy grunt0contrib-copy@
+61 silly lockFile 0a668ef6-grunt-contrib-clean-0-6-0 grunt-contrib-clean@0.6.0
+62 silly lockFile 0a668ef6-grunt-contrib-clean-0-6-0 grunt-contrib-clean@0.6.0
+63 silly lockFile 8bff91c3-grunt-contrib-clean grunt-contrib-clean@
+64 silly lockFile 8bff91c3-grunt-contrib-clean grunt-contrib-clean@
+65 error 404 404 Not Found: grunt0contrib-copy
+65 error 404
+65 error 404 'grunt0contrib-copy' is not in the npm registry.
+65 error 404 You should bug the author to publish it
+65 error 404 It was specified as a dependency of 'nss-cohort-2014-06-07.github.io'
+65 error 404
+65 error 404 Note that you can also install from a
+65 error 404 tarball, folder, or http url, or git url.
+66 error System Darwin 14.0.0
+67 error command "/usr/local/node/bin/node" "/usr/local/node/bin/npm" "install" "grunt-contrib-clean" "grunt0contrib-copy" "--save-dev"
+68 error cwd /Users/kjones/Documents/Code/nss-cohort-2014-06-07.github.io
+69 error node -v v0.10.32
+70 error npm -v 1.4.28
+71 error code E404
+72 verbose exit [ 1, true ]
