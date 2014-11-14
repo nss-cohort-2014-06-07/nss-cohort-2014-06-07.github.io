@@ -3,6 +3,28 @@
 module.exports = function(grunt){
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    // ---------------------------------------------------------------------- //
+    concat: {
+      options: {
+        separator: ';'
+      },
+      dist: {
+        src: ['client/**/*.js'],
+        dest: 'public/<%= pkg.name %>.js'
+      }
+    },
+    // ---------------------------------------------------------------------- //
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+      },
+      dist: {
+        files: {
+          'public/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+        }
+      }
+    },
+    // ---------------------------------------------------------------------- //
     connect: {
       main: {
         options: {
@@ -95,8 +117,10 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('deploy', ['clean', 'build']);
-  grunt.registerTask('build', ['jshint:all', 'jade', 'less', 'copy:js', 'copy:assets', 'copy:favicon']);
+  grunt.registerTask('serve', ['connect', 'watch']);
+  grunt.registerTask('build', ['jshint:all', 'jade', 'less', 'concat', 'uglify', 'copy:js', 'copy:assets', 'copy:favicon']);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 };
