@@ -1,81 +1,98 @@
 doctype html
-html
+html(lang='en')
   head
     meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name="description" content="Portfolio Landing Page for All Nashville Software School Students Cohort Six")
     title NSS Cohort 6
+    link(rel='stylesheet', href='vendor/bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', href='vendor/bootstrap/css/font-awesome.min.css')
+    link(rel='stylesheet', href='vendor/bootstrap/css/main.css')
     link(rel='stylesheet', href='app.min.css')
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
   body
-    h1 Welcome to NSS : Cohort VI
-    ol
-      li
-        a(href='http://shrutijalewar.github.io/') shruti
-      li
-        a(href='#') shruti
-      li
-        a(href='http://mikebbarreiro.github.io/') michael
-      li
-        a(href='http://michaelbarreiro.com') michael
-      li
-        a(href='http://sarahmpearson.github.io/') sarah
-      li
-        a(href='http://sarahmpearson.com') sarah
-      li
-        a(href='http://kaylalynjones.github.io/') kayla
-      li
-        a(href='http://www.kaylalynjones.ninja') kayla
-      li
-        a(href='http://dsroden.github.io/') daniel
-      li
-        a(href='http://www.dsroden.com') daniel
-      li
-        a(href='http://lizahcarter.github.io/') liza
-      li
-        a(href='http://liza.link') liza
-      li
-        a(href='http://abarnhard.github.io/') adam
-      li
-        a(href='http://www.adambarnhard.com') adam
-      li
-        a(href='http://kadowki.github.io/') dave
-      li
-        a(href='http://daviddboling.com') dave
-      li
-        a(href='http://mlfryman.github.io/') melanie
-      li
-        a(href='http://www.mlfryman.com') melanie
-      li
-        a(href='http://mfbadr.github.io/') mikey
-      li
-        a(href='http://mikeyb.net') mikey
-      li
-        a(href='http://bchiatt.github.io/') brian
-      li
-        a(href='http://portfolio.bchiatt.co') brian
-      li
-        a(href='http://zoeames.github.io/') zoe
-      li
-        a(href='http://zoeames.com') zoe
-      li
-        a(href='http://joyp.github.io/') joy
-      li
-        a(href='http://portfolio.joympratt.com') joy
-      li
-        a(href='http://tdsjr82.github.io') dennis
-      li
-        a(href='http://dennis-stanley.com') dennis
-      li
-        a(href='http://superartie.github.io/') nathan
-      li
-        a(href='#') nathan
-      li
-        a(href='http://mkeef1.github.io/') matt
-      li
-        a(href='http://mkeef1.com') matt
-      li
-        a(href='http://glogandr.github.io/') logan
-      li
-        a(href='http://gloganrichardson.com') logan
-      li
-        a(href='http://jjsub.github.io/') juan
-      li
-        a(href='http://portfolio.juanjob.info') juan
+    //Fixed navbar 
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') 
+            i.fa.fa-bolt 
+          ul.nav.navbar-nav.navbar-left
+            li
+              a(href='#') Nashville Software School
+            
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#about') About
+            li
+              a(href='#meet') Meet
+            li
+              a(href='#contac') Contact
+
+    .hello
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2.centered
+              h1 Hello World!
+              h2 Meet NSS : Cohort VI
+    .construction
+      h3.centered Site Under Construction! Check back periodically for more awesome stuff!
+    .meet
+      ul.col-md-12
+        a(href='http://zoeames.github.io/', target='_blank'): li Zoe Ames
+          //a(href='http://zoeames.com', target='_blank'): li zoe
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://mikeyb.net', target='_blank'): li Mikey Badr
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://www.adambarnhard.com', target='_blank'): li Adam Barnhard
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://mikebbarreiro.github.io/', target='_blank'): li Michael Barreiro
+          //a(href='http://michaelbarreiro.com', target='_blank'): li michael
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://daviddboling.com', target='_blank'): li Dave Boling
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://lizahcarter.github.io/', target='_blank'): li Liza Carter
+          //a(href='http://liza.link', target='_blank'): li liza
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://www.mlfryman.com', target='_blank'): li Melanie Fryman
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://portfolio.bchiatt.co', target='_blank'): li Brian Hiatt
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://portfolio.kaylalynjones.ninja', target='_blank'): li Kayla Jones
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://mkeef1.com', target='_blank'): li Matt Keef
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://sarahmpearson.github.io/', target='_blank'): li Sarah Pearson
+          //a(href='http://sarahmpearson.com', target='_blank'): li sarah
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://portfolio.joympratt.com', target='_blank'): li Joy Pratt
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://shrutijalewar.github.io/', target='_blank'): li Shruti Sharma
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://dennis-stanley.com', target='_blank'): li Dennis Stanley
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://glogandr.github.io/', target='_blank'): li Logan Richardson
+          //a(href='http://gloganrichardson.com', target='_blank'): li logan
+          i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://www.dsroden.com', target='_blank'): li Daniel Roden
+          i.fa.fa-link.fa-fw.fa-5x
+          //a(href='http://jjsub.github.io/', target='_blank'): li Juan Rodriguez
+          //a(href='http://portfolio.juanjob.info', target='_blank'): li Juan Rodriguez
+          //i.fa.fa-link.fa-fw.fa-5x
+        a(href='http://superartie.github.io/', target='_blank'): li Nathan Vasquez
+          i.fa.fa-link.fa-fw.fa-5x
+
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/vendor/bootstrap/js/bootstrap.js')
+    script(src='/vendor/bootstrap/js/chart.js')
