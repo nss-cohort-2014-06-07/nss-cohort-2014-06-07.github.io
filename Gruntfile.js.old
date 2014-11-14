@@ -1,0 +1,91 @@
+module.exports = function(grunt) {
+  'use strict';
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
+    concat: {
+      options: {
+        separator: ';'
+      },
+      dist: {
+        src: ['app/**/*.js'],
+        dest: 'dist/<%= pkg.name %>.js'
+      }
+    },
+    uglify: {
+      options: {
+        banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+      },
+      dist: {
+        files: {
+          'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
+        }
+      }
+    },
+    jshint: {
+      files: ['Gruntfile.js', 'app/**/*.js','!vendor/**/*.js'],
+      options: {
+        // options here to override JSHint defaults
+        globals: {
+          jQuery: true,
+          console: true,
+          module: true,
+          document: true
+        }
+      }
+    },
+    less: {
+      development: {
+        options: {
+          compress: true,
+          paths: ['dist/']
+        },
+        files: {
+          'dist/app.min.css': ['app/**/*.less']
+        }
+      }
+    },
+    jade: {
+      compile: {
+        files: {
+          'dist/index.html': ['app/**/*.jade']
+        },
+
+      }
+    },
+    connect: {
+      server: {
+        options: {
+          port: 3000,
+          base: 'dist'
+        }
+      }
+    },
+    watch: {
+      scripts: {
+        files: ['<%= jshint.files %>'],
+        tasks: ['jshint']
+      },
+      styles: {
+        files: ['app/**/*.less'],
+        tasks: ['less']
+      },
+      templates: {
+        files: ['app/**/*.jade'],
+        tasks: ['jade']
+      }
+    }
+  });
+
+  grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-connect');
+
+  grunt.registerTask('serve', ['connect', 'watch']);
+
+  grunt.registerTask('default', ['jshint', 'concat', 'less', 'jade', 'uglify', 'connect', 'watch']);
+
+};

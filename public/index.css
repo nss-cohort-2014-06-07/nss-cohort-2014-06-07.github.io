@@ -1,0 +1,66 @@
+body {
+  background-color: #f7f7f7;
+}
+.hello {
+  width: 100%;
+  height: 400px;
+  padding: 40px;
+  margin: 90px 0 0 0;
+}
+.hello h1 {
+  font-weight: bold;
+  color: #66cdaa;
+  font-size: 5em;
+}
+.hello h2 {
+  font-size: 2em;
+}
+.construction {
+  background-color: #66cdaa;
+  padding: 20px;
+}
+.construction h3 {
+  color: #f7f7f7;
+  font-weight: 700;
+}
+.meet ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eee;
+}
+.meet ul i {
+  margin: 40px auto;
+  color: #eee;
+}
+.meet ul > a {
+  list-style: none;
+  display: inline-block;
+  width: 25%;
+  height: 300px;
+  border: 2px solid #eee;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+  transition: background 1s;
+  -moz-transition: background 1s;
+  /* Firefox 4 */
+  -webkit-transition: background 1s;
+  /* Safari and Chrome */
+  -o-transition: background 1s;
+  /* Opera */
+}
+.meet ul > a:hover {
+  background-color: rgba(248, 92, 55, 0.49);
+  color: #f7f7f7;
+  font-weight: 700;
+}
+.meet ul > a:active {
+  background-color: rgba(248, 92, 55, 0.49);
+  color: #f7f7f7;
+  font-weight: 700;
+}
+@media (max-width: 960px) {
+  .meet ul > a {
+    width: 50%;
+  }
+}
