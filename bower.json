@@ -1,0 +1,22 @@
+{
+  "name": "cohort-6-website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/nss-cohort-2014-06-07/nss-cohort-2014-06-07.github.io",
+  "authors": [
+    "Kayla Jones <kaylalynjones>",
+    "Brian Hiatt <bchiatt>"
+  ],
+  "description": "NSS Cohort 6 Class Website",
+  "main": "client/index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
