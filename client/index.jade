@@ -101,20 +101,21 @@ html(lang='en')
   .hack
     .row
       .col-xs-12
-        h3.text-center We had a great time at HackNashville6!
+        h2.text-center We had a great time at HackNashville6!
     .row
-      .col-sm-6
-        img.img-responsive
-      .col-sm-6
+      .col-sm-3
+        img.img-responsive(src='public/assets/hack_small.jpg')
+        
+      .col-sm-9
 
         h4 Here are the Teams we participated in:
         .col-md-6
           ul
-            li Dance...something, Winning Team
-              ul
+            li.title HackDanceville, Hackers Choice Award
+              ul.participants
                 li Juan Job Rodriguez 
-            li NashVesTN, finalist
-              ul 
+            li.title NashVesTN, Finalist
+              ul.participants
                 li Melanie Fryman
                 li Brian Hiatt
                 li Kayla Jones
@@ -123,16 +124,14 @@ html(lang='en')
                 li Shruti Sharma
         .col-md-6
           ul
-            li Friendswipe
-              ul
+            li.title Friendswipe
+              ul.participants
                 li Mikey Badr
                 li Adam Barnhard
                 li Daniel Roden
-            li comic game...
-              ul
-                li c
-                li b
-                li a
+            li.title Gravity
+              ul.participants
+                li Nathan Vasquez
           
   .featured
     h2 Featured Projects
@@ -145,7 +144,7 @@ html(lang='en')
       h5 The students for developing this site.
         
     .col-md-6.contact
-      a(href='http://nashvillesoftwareschool.com/'): img.nss_logo(src='/public/assets/nss_logo.png', alt='nss')
+      a(href='http://nashvillesoftwareschool.com/'): img.nss-logo(src='/public/assets/nss.png', alt='nss')
       .row
         .col-xs-12.copy
           small &copy;Nashville Software School

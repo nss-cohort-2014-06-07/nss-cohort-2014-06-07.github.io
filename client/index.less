@@ -24,13 +24,11 @@ body {
   background-color: white;
   height: auto;
   padding: 40px;
-  .group-img {
 
-    img {
+  .group-img img {
       display: block;
       margin: 0 auto;
       border-radius: 5px;
-    }
   }
   .desc {
     padding: 10px;
@@ -45,12 +43,27 @@ body {
   background-color: white;
 
   img {
-    width: 300px;
-    height: 300px;
     border: 1px solid grey;
     margin: 0 auto;
     display: block;
     border-radius: 5px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li.title {
+      font-size: 18px;
+      font-weight: bold;
+      color: @orange;
+      line-height: 26px;
+      margin-top: 20px;
+    }
+  }
+  ul.participants > li {
+    font-weight: normal;
+    color: black;
+    line-height: 26px;
   }
 }
 .featured {
@@ -76,6 +89,12 @@ footer {
     }
     .copy {
       text-align: center;
+    }
+    .nss-logo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      display: block;
     }
   }
 }
@@ -110,7 +129,7 @@ footer {
     padding: 40px;
   }
   .hack {
-    height: 600px;
+    height: 500px;
     padding: 40px;
     ul {
       margin: 0;
@@ -121,7 +140,7 @@ footer {
       color: @green;
     }
     h4 {
-      margin-left: 35px;
+      margin-left: 2%;
     }
   }
   .featured {
@@ -137,6 +156,9 @@ footer {
 
       .copy {
         text-align: right;
+      }
+      .nss-logo {
+        display: inline;
       }
     }
   }

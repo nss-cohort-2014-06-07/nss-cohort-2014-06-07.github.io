@@ -37,12 +37,26 @@ body {
   background-color: white;
 }
 .hack img {
-  width: 300px;
-  height: 300px;
   border: 1px solid grey;
   margin: 0 auto;
   display: block;
   border-radius: 5px;
+}
+.hack ul {
+  list-style: none;
+  padding: 0;
+}
+.hack ul li.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f85c37;
+  line-height: 26px;
+  margin-top: 20px;
+}
+.hack ul.participants > li {
+  font-weight: normal;
+  color: black;
+  line-height: 26px;
 }
 .featured {
   padding: 20px;
@@ -74,6 +88,14 @@ footer .copy .copy,
 footer .thanks .copy {
   text-align: center;
 }
+footer .contact .nss-logo,
+footer .copy .nss-logo,
+footer .thanks .nss-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+}
 @media (min-width: 768px) {
   .hello {
     width: 100%;
@@ -102,7 +124,7 @@ footer .thanks .copy {
     padding: 40px;
   }
   .hack {
-    height: 600px;
+    height: 500px;
     padding: 40px;
   }
   .hack ul {
@@ -114,7 +136,7 @@ footer .thanks .copy {
     color: #66cdaa;
   }
   .hack h4 {
-    margin-left: 35px;
+    margin-left: 2%;
   }
   .featured {
     height: 450px;
@@ -129,5 +151,8 @@ footer .thanks .copy {
   }
   footer .contact .copy {
     text-align: right;
+  }
+  footer .contact .nss-logo {
+    display: inline;
   }
 }
