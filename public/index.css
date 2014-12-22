@@ -15,18 +15,35 @@ body {
 .hello h2 {
   font-size: 1.25em;
 }
+.pic {
+  background-color: white;
+  height: auto;
+  padding: 40px 40px 0;
+}
+.pic .group-img img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
 .about {
   background-color: white;
   height: auto;
   padding: 40px;
 }
-.about .group-img img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 5px;
+.about h3 {
+  text-align: center;
 }
 .about .desc {
-  padding: 10px;
+  -webkit-column-count: 2;
+  /* Chrome, Safari, Opera */
+  -moz-column-count: 2;
+  /* Firefox */
+  column-count: 2;
+  -webkit-column-gap: 40px;
+  /* Chrome, Safari, Opera */
+  -moz-column-gap: 40px;
+  /* Firefox */
+  column-gap: 40px;
 }
 .meet {
   padding: 20px;
@@ -145,6 +162,13 @@ footer .thanks .nss-logo {
   footer {
     height: 450px;
     padding: 40px;
+  }
+  footer ul {
+    margin: 0;
+  }
+  footer li {
+    list-style: none;
+    line-height: 20px;
   }
   footer .contact {
     border: none;
