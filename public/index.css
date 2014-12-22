@@ -33,18 +33,6 @@ body {
 .about h3 {
   text-align: center;
 }
-.about .desc {
-  -webkit-column-count: 2;
-  /* Chrome, Safari, Opera */
-  -moz-column-count: 2;
-  /* Firefox */
-  column-count: 2;
-  -webkit-column-gap: 40px;
-  /* Chrome, Safari, Opera */
-  -moz-column-gap: 40px;
-  /* Firefox */
-  column-gap: 40px;
-}
 .meet {
   padding: 20px;
 }
@@ -129,11 +117,21 @@ footer .thanks .nss-logo {
     font-size: 2em;
   }
   .about {
-    height: 450px;
+    height: auto;
     padding: 40px;
   }
   .about .desc {
     padding: 40px;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
   }
   .meet {
     background-color: transparent;
