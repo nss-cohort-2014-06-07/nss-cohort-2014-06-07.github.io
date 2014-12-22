@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(ng-app='class', lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -51,58 +51,39 @@ html(lang='en')
         img.img-responsive(src='/public/assets/group1.jpg', alt='Photo of the Class.')
     .about#about
       .col-sm-12
-        h3 A little bit about us...
+        h2 A little bit about the class.
       .col-sm-12.desc
-        p We began this six-month journey as strangers from different backgrounds equally driven to change our lives. 
-          | We left as close friends joining all NSS Alumni that came before us on the path to create great software. 
-          | The Web Developer Bootcamp is a six-month, full-time program. The curriculum teaches the skills and technologies 
+        h3 After six months of training, thousand of lines of code, and gallons of coffee, we're ready for the coding 
+          | challenges of tomorrow.
+        p The Web Developer Bootcamp is a six-month, full-time program. The curriculum teaches the skills and technologies 
           | required to become a junior full-stack software developer.
-          | Cohort Six focused on a full JavaScript stack. Building the frontend chops to create websites, web apps, 
+          | Cohort Six focused on a full JavaScript stack, building the frontend chops to create websites, web apps, 
           | and hybrid mobile applications with HTML, CSS, JavaScript, jQuery, AngularJS, and Ionic.
-          | We also got a solid foundation in general software engineering and server­-side development concepts, 
+          | We laid down a solid foundation in general software engineering and server­-side development concepts, 
           | e.g. test­-driven development, object­-oriented programming, pair programming, 
           | source code control in a team environment, common code patterns, NoSQL and SQL databases with NodeJS, Express, 
           | Hapi, MongoDB, and Postgresql.
-          | After six months of training, thousand of lines of code, and gallons of coffee, we're ready for the coding 
-          | challenges of tomorrow.
-    .meet#meet
-      ul.col-md-12
-        a(href='http://zoeames.github.io/', target='_blank'): li Zo&euml; Ames
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://mikeyb.net', target='_blank'): li Mikey Badr
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://www.adambarnhard.com/'): li Adam Barnhard
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://mikebbarreiro.github.io/', target='_blank'): li Michael Barreiro
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://daviddboling.com', target='_blank'): li Dave Boling
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://lizahcarter.github.io/', target='_blank'): li Liza Carter
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://melanie.fryman.io/', target='_blank'): li Melanie Fryman
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://portfolio.bchiatt.co', target='_blank'): li Brian Hiatt
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://portfolio.kaylalynjones.ninja', target='_blank'): li Kayla Jones
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://mkeef1.com', target='_blank'): li Matt Keef 
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://sarahmpearson.github.io/', target='_blank'): li Sarah Pearson
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://portfolio.joympratt.com', target='_blank'): li Joy Pratt &nbsp;
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://glogandr.github.io/', target='_blank'): li Logan Richardson
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://www.dsroden.com', target='_blank'): li Daniel Roden 
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='#'): li Juan Job Rodriguez
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://shrutijalewar.github.io/', target='_blank'): li Shruti Sharma
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://dennis-stanley.com', target='_blank'): li Dennis Stanley
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://superartie.github.io/', target='_blank'): li Nathan Vasquez
-          i.fa.fa-link.fa-fw.fa-5x
+    .row.meet#meet(ng-controller='ClassCtrl')
+      .meet-nav
+        h2 Meet Us
+        div(ng-repeat='student in students')
+          a(href='{{ "#" + student.name}}') {{student.name}} &nbsp;
+          p &bull; &nbsp;
+      .horizontal
+        .students
+          section.student(ng-repeat='student in students', id='{{student.name}}')
+            .col-xs-6
+              img.img-responsive(ng-src='{{student.photo}}' alt='photo of {{student.name}}')
+            .col-xs-6
+              h3 {{student.name}}
+              p {{student.desc}}
+              ul
+                li: a(href='{{student.github}}'): i.fa.fa-github-square.fa-2x
+                li: a(href='{{student.linkedin}}'): i.fa.fa-linkedin-square.fa-2x
+                li: a(href='{{student.twitter}}'): i.fa.fa-twitter-square.fa-2x
+                  
+                
+          .clearfix
 
   .hack
     .row
@@ -165,6 +146,8 @@ html(lang='en')
           small &copy;Nashville Software School
       
       
-
-    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='public/bower_components/jquery/dist/jquery.min.js')
+    script(src='public/bower_components/angular/angular.min.js')
+    script(src='public/bower_components/angular-route/angular-route.min.js')
+    script(src='public/nss-cohort-2014-06-07.github.io.min.js')
     script(src='vendor/bootstrap/js/bootstrap.js')

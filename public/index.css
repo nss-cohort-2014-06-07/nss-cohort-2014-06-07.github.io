@@ -30,11 +30,37 @@ body {
   height: auto;
   padding: 40px;
 }
-.about h3 {
+.about h2 {
   text-align: center;
 }
-.meet {
+.meet-nav div,
+.meet-nav div > a,
+.meet-nav div > p {
+  display: inline;
+}
+.horizontal {
   padding: 20px;
+  height: 470px;
+  width: 100%;
+  overflow: auto;
+}
+.horizontal .students {
+  width: 18430px;
+}
+.horizontal .students .student {
+  width: 960px;
+  float: left;
+  padding-right: 40px;
+  border-right: 2px solid #e2e2e2;
+  margin-right: 10px;
+}
+.horizontal .students .student ul {
+  padding: 0;
+}
+.horizontal .students .student ul > li {
+  list-style: none;
+  display: inline;
+  margin: 10px;
 }
 .hack {
   height: auto;
@@ -104,7 +130,7 @@ footer .thanks .nss-logo {
 @media (min-width: 768px) {
   .hello {
     width: 100%;
-    height: 400px;
+    height: 350px;
     padding: 40px;
     margin: 90px 0 0 0;
   }
@@ -176,46 +202,5 @@ footer .thanks .nss-logo {
   }
   footer .contact .nss-logo {
     display: inline;
-  }
-}
-.meet ul {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #eee;
-}
-.meet ul i {
-  margin: 40px auto;
-  color: #eee;
-}
-.meet ul > a {
-  list-style: none;
-  display: inline-block;
-  width: 25%;
-  height: 300px;
-  border: 2px solid #eee;
-  font-size: 30px;
-  text-align: center;
-  vertical-align: middle;
-  transition: background 1s;
-  -moz-transition: background 1s;
-  /* Firefox 4 */
-  -webkit-transition: background 1s;
-  /* Safari and Chrome */
-  -o-transition: background 1s;
-  /* Opera */
-}
-.meet ul > a:hover {
-  background-color: rgba(248, 92, 55, 0.49);
-  color: #f7f7f7;
-  font-weight: 700;
-}
-.meet ul > a:active {
-  background-color: rgba(248, 92, 55, 0.49);
-  color: #f7f7f7;
-  font-weight: 700;
-}
-@media (max-width: 960px) {
-  .meet ul > a {
-    width: 50%;
   }
 }

@@ -1,0 +1,153 @@
+[{
+    "name":"Zoe Ames",
+    "desc":"",
+    "linkedin": "www.linkedin.com/in/zoeames",
+    "twitter":"https://twitter.com/zoe_ames",
+    "github":"https://github.com/zoeames",
+    "photo":"public/assets/zoe.jpg"
+  },
+  {
+    "name":"Mikey Badr",
+    "desc":"Mikey is biology major turned aspiring developer who mainly speaks Javascript. He is comfortable on the front-end working with Angular and html/css preprocessors, or on the back-end working with Node and Hapi/express. When he isn't coding he can be found playing board games, riding his bike, playing ultimate, rock climbing, watching weird movies, and generally looking for new experiences.",
+    "linkedin": "https://www.linkedin.com/profile/view?id=388687505",
+    "twitter":"https://twitter.com/MikeyBadr",
+    "github":"https://github.com/mfbadr",
+    "photo":"public/assets/mikey.jpg"
+  },
+  {
+    "name":"Adam Barnhard",
+    "desc":"Adam Barnhard is a backend web developer experienced in JavaScript development using multiple Node frameworks including Express and Hapi. He graduated from the Nashville Software School in January 2015 and has a bachelors of science in finance from The University of Kansas.",
+    "linkedin": "https://www.linkedin.com/in/adambarnhard",
+    "twitter":"https://twitter.com/adambarnhard",
+    "github":"https://github.com/ABarnhard",
+    "photo":"public/assets/adam.jpg"
+  },
+  {
+    "name":"Michael Barreiro",
+    "desc":"",
+    "linkedin": "#",
+    "twitter":"https://twitter.com/l8MikeBl8",
+    "github":"https://github.com/MikeBBarreiro",
+    "photo":"public/assets/michael.jpg"
+  },
+  {
+    "name":"David Boling",
+    "desc":"As a technology aficionado, David is a Full Stack web developer with experience in JavaScript, Node, Angular, MongoDB, PostgreSQL, and more. In his spare time, he strives to learn new programming paradigms, is ever increasing his technological skill set, and loves to compose music as a hobby.",
+    "linkedin": "www.linkedin.com/pub/david-boling/74/8b3/906/",
+    "twitter":"https://twitter.com/serdavosboling",
+    "github":"https://github.com/kadowki",
+    "photo":"public/assets/dave.jpg"
+  },
+  {
+    "name":"Liza Carter",
+    "desc":"",
+    "linkedin": "www.linkedin.com/in/lizahcarter",
+    "twitter":"https://twitter.com/LizaHCarter",
+    "github":"https://github.com/LizaHCarter",
+    "photo":"public/assets/liza.jpg"
+  },
+  {
+    "name":"Melanie Fryman",
+    "desc":"",
+    "linkedin": "https://www.linkedin.com/in/mlfryman",
+    "twitter":"https://twitter.com/mlfryman",
+    "github":"https://github.com/mlfryman",
+    "photo":"public/assets/melanie.jpg"
+  },
+  {
+    "name":"Brian Hiatt",
+    "desc":"",
+    "linkedin": "https://www.linkedin.com/profile/view?id=349857997",
+    "twitter":"https://twitter.com/bchiatt",
+    "github":"https://github.com/bchiatt",
+    "photo":"public/assets/brian.jpg"
+  },
+  {
+    "name":"Kayla Jones",
+    "desc":"",
+    "linkedin": "https://www.linkedin.com/in/kaylalynjones/",
+    "twitter":"https://twitter.com/grandtraipse",
+    "github":"https://github.com/kaylalynjones",
+    "photo":"public/assets/kayla.jpg"
+  },
+  {
+    "name":"Matt Keef",
+    "desc":"Matt, a former chef, has traded his knife kit with a laptop and is now cooking up some hot code!  He has training as a full stack developer and experience with several different technologies.  He enjoys writing code for both client and server, but Matt's greatest passion lies in game development and hopes to turn his passion into a career.",
+    "linkedin": "https://www.linkedin.com/in/mkeef1",
+    "twitter":"https://twitter.com/mhkeef",
+    "github":"https://github.com/mkeef1",
+    "photo":"public/assets/matt.jpg"
+  },
+  {
+    "name":"Sarah Pearson",
+    "desc":"",
+    "linkedin": "https://www.linkedin.com/in/sarahpearson/",
+    "twitter":"https://twitter.com/SassPearson",
+    "github":"https://github.com/SarahMPearson",
+    "photo":"public/assets/sarah.jpg"
+  },
+  {
+    "name":"Joy Pratt",
+    "desc":"",
+    "linkedin": "https://www.linkedin.com/in/joypratt",
+    "twitter":"https://twitter.com/joympratt",
+    "github":"https://github.com/JoyP",
+    "photo":"public/assets/Joy.jpg"
+
+  },
+  {
+    "name":"Logan Richardson",
+    "desc":"",
+    "linkedin": "www.linkedin.com/in/zoeames",
+    "twitter":"https://twitter.com/Glogandr",
+    "github":"https://github.com/GLoganDR",
+    "photo":"public/assets/logan.jpg"
+  },
+  {
+    "name":"Daniel Roden",
+    "desc":"Daniel is a coder and designer with a background in neuroscience and fine art.",
+    "linkedin": "#",
+    "twitter":"https://twitter.com/dsroden",
+    "github":"https://github.com/DSRoden",
+    "photo":"public/assets/daniel.jpg"
+  },
+  {
+    "name":"Juan Job Rodriguez",
+    "desc":" I am software engineer and web developer who cares about people.",
+    "linkedin": "http://www.linkedin.com/pub/juan-job-rodriguez/80/552/7a3/",
+    "twitter":"https://twitter.com/JuanJob11",
+    "github":"https://github.com/jjsub",
+    "photo":"public/assets/juan.jpg"
+  },
+  {
+    "name":"Shruti Sharma",
+    "desc":"",
+    "linkedin": "https://www.linkedin.com/profile/view?id=41234822",
+    "twitter":"https://twitter.com/shrutijalewar",
+    "github":"https://github.com/shrutijalewar",
+    "photo":"public/assets/shruti.jpg"
+  },
+  {
+    "name":"Dennis Stanley",
+    "desc":"",
+    "linkedin": "#",
+    "twitter":"https://twitter.com/TDSjr82",
+    "github":"https://github.com/tdsj82",
+    "photo":"public/assets/dennis.jpg"
+  },
+  {
+    "name":"Nathan Vasquez",
+    "desc":"Multi-instrumentalist turned coder, Nathan's new kick is making a name for himself in the local tech community!",
+    "linkedin": "https://www.linkedin.com/pub/nathan-vasquez/aa/104/236",
+    "twitter":"https://twitter.com/superartie",
+    "github":"https://github.com/superartie",
+    "photo":"public/assets/nathan.jpg"
+  },
+  {
+    "name":"Chyld Medford",
+    "desc":"Our Awesome Teacher.",
+    "linkedin": "https://www.linkedin.com/profile/view?id=12821117",
+    "twitter":"https://twitter.com/chyldmedford",
+    "github":"https://github.com/chyld",
+    "photo":"public/assets/chyld.jpg"
+  }]
