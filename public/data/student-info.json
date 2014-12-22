@@ -1,10 +1,11 @@
 [{
-    "name":"Zoe Ames",
+    "name":"Zoë Ames",
     "desc":"",
-    "linkedin": "www.linkedin.com/in/zoeames",
+    "linkedin": "https://www.linkedin.com/in/zoeames",
     "twitter":"https://twitter.com/zoe_ames",
     "github":"https://github.com/zoeames",
-    "photo":"public/assets/zoe.jpg"
+    "photo":"public/assets/zoe.jpg",
+    "url": "http://zoeames.github.io/"
   },
   {
     "name":"Mikey Badr",
@@ -12,7 +13,8 @@
     "linkedin": "https://www.linkedin.com/profile/view?id=388687505",
     "twitter":"https://twitter.com/MikeyBadr",
     "github":"https://github.com/mfbadr",
-    "photo":"public/assets/mikey.jpg"
+    "photo":"public/assets/mikey.jpg",
+    "url": "http://mikeyb.net"
   },
   {
     "name":"Adam Barnhard",
@@ -20,7 +22,8 @@
     "linkedin": "https://www.linkedin.com/in/adambarnhard",
     "twitter":"https://twitter.com/adambarnhard",
     "github":"https://github.com/ABarnhard",
-    "photo":"public/assets/adam.jpg"
+    "photo":"public/assets/adam.jpg",
+    "url": "http://www.adambarnhard.com/"
   },
   {
     "name":"Michael Barreiro",
@@ -28,7 +31,8 @@
     "linkedin": "#",
     "twitter":"https://twitter.com/l8MikeBl8",
     "github":"https://github.com/MikeBBarreiro",
-    "photo":"public/assets/michael.jpg"
+    "photo":"public/assets/michael.jpg",
+    "url": "http://mikebbarreiro.github.io/"
   },
   {
     "name":"David Boling",
@@ -36,15 +40,17 @@
     "linkedin": "www.linkedin.com/pub/david-boling/74/8b3/906/",
     "twitter":"https://twitter.com/serdavosboling",
     "github":"https://github.com/kadowki",
-    "photo":"public/assets/dave.jpg"
+    "photo":"public/assets/dave.jpg",
+    "url": "http://daviddboling.com"
   },
   {
     "name":"Liza Carter",
     "desc":"",
-    "linkedin": "www.linkedin.com/in/lizahcarter",
+    "linkedin": "https://www.linkedin.com/in/lizahcarter",
     "twitter":"https://twitter.com/LizaHCarter",
     "github":"https://github.com/LizaHCarter",
-    "photo":"public/assets/liza.jpg"
+    "photo":"public/assets/liza.jpg",
+    "url": "http://lizahcarter.github.io/"
   },
   {
     "name":"Melanie Fryman",
@@ -52,15 +58,17 @@
     "linkedin": "https://www.linkedin.com/in/mlfryman",
     "twitter":"https://twitter.com/mlfryman",
     "github":"https://github.com/mlfryman",
-    "photo":"public/assets/melanie.jpg"
+    "photo":"public/assets/melanie.jpg",
+    "url": "http://melanie.fryman.io/"
   },
   {
-    "name":"Brian Hiatt",
+    "name":"Brian C Hiatt",
     "desc":"",
     "linkedin": "https://www.linkedin.com/profile/view?id=349857997",
     "twitter":"https://twitter.com/bchiatt",
     "github":"https://github.com/bchiatt",
-    "photo":"public/assets/brian.jpg"
+    "photo":"public/assets/brian.jpg",
+    "url": "http://portfolio.bchiatt.co"
   },
   {
     "name":"Kayla Jones",
@@ -68,7 +76,8 @@
     "linkedin": "https://www.linkedin.com/in/kaylalynjones/",
     "twitter":"https://twitter.com/grandtraipse",
     "github":"https://github.com/kaylalynjones",
-    "photo":"public/assets/kayla.jpg"
+    "photo":"public/assets/kayla.jpg",
+    "url": "http://portfolio.kaylalynjones.ninja"
   },
   {
     "name":"Matt Keef",
@@ -76,7 +85,8 @@
     "linkedin": "https://www.linkedin.com/in/mkeef1",
     "twitter":"https://twitter.com/mhkeef",
     "github":"https://github.com/mkeef1",
-    "photo":"public/assets/matt.jpg"
+    "photo":"public/assets/matt.jpg",
+    "url": "http://mkeef1.com"
   },
   {
     "name":"Sarah Pearson",
@@ -84,7 +94,8 @@
     "linkedin": "https://www.linkedin.com/in/sarahpearson/",
     "twitter":"https://twitter.com/SassPearson",
     "github":"https://github.com/SarahMPearson",
-    "photo":"public/assets/sarah.jpg"
+    "photo":"public/assets/sarah.jpg",
+    "url": "http://sarahmpearson.github.io/"
   },
   {
     "name":"Joy Pratt",
@@ -92,16 +103,17 @@
     "linkedin": "https://www.linkedin.com/in/joypratt",
     "twitter":"https://twitter.com/joympratt",
     "github":"https://github.com/JoyP",
-    "photo":"public/assets/Joy.jpg"
-
+    "photo":"public/assets/Joy.jpg",
+    "url": "http://portfolio.joympratt.com"
   },
   {
     "name":"Logan Richardson",
     "desc":"",
-    "linkedin": "www.linkedin.com/in/zoeames",
+    "linkedin": "#",
     "twitter":"https://twitter.com/Glogandr",
     "github":"https://github.com/GLoganDR",
-    "photo":"public/assets/logan.jpg"
+    "photo":"public/assets/logan.jpg",
+    "url": "http://glogandr.github.io/"
   },
   {
     "name":"Daniel Roden",
@@ -109,7 +121,8 @@
     "linkedin": "#",
     "twitter":"https://twitter.com/dsroden",
     "github":"https://github.com/DSRoden",
-    "photo":"public/assets/daniel.jpg"
+    "photo":"public/assets/daniel.jpg",
+    "url": "http://www.dsroden.com"
   },
   {
     "name":"Juan Job Rodriguez",
@@ -117,7 +130,8 @@
     "linkedin": "http://www.linkedin.com/pub/juan-job-rodriguez/80/552/7a3/",
     "twitter":"https://twitter.com/JuanJob11",
     "github":"https://github.com/jjsub",
-    "photo":"public/assets/juan.jpg"
+    "photo":"public/assets/juan.jpg",
+    "url": "http://portfolio.juanjob.info"
   },
   {
     "name":"Shruti Sharma",
@@ -125,7 +139,8 @@
     "linkedin": "https://www.linkedin.com/profile/view?id=41234822",
     "twitter":"https://twitter.com/shrutijalewar",
     "github":"https://github.com/shrutijalewar",
-    "photo":"public/assets/shruti.jpg"
+    "photo":"public/assets/shruti.jpg",
+    "url": "http://shrutijalewar.github.io/"
   },
   {
     "name":"Dennis Stanley",
@@ -133,7 +148,8 @@
     "linkedin": "#",
     "twitter":"https://twitter.com/TDSjr82",
     "github":"https://github.com/tdsj82",
-    "photo":"public/assets/dennis.jpg"
+    "photo":"public/assets/dennis.jpg",
+    "url": "http://dennis-stanley.com"
   },
   {
     "name":"Nathan Vasquez",
@@ -141,13 +157,6 @@
     "linkedin": "https://www.linkedin.com/pub/nathan-vasquez/aa/104/236",
     "twitter":"https://twitter.com/superartie",
     "github":"https://github.com/superartie",
-    "photo":"public/assets/nathan.jpg"
-  },
-  {
-    "name":"Chyld Medford",
-    "desc":"Our Awesome Teacher.",
-    "linkedin": "https://www.linkedin.com/profile/view?id=12821117",
-    "twitter":"https://twitter.com/chyldmedford",
-    "github":"https://github.com/chyld",
-    "photo":"public/assets/chyld.jpg"
+    "photo":"public/assets/nathan.jpg",
+    "url": "http://superartie.github.io/"
   }]

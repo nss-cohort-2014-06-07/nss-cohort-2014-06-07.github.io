@@ -45,7 +45,7 @@ body {
   overflow: auto;
 }
 .horizontal .students {
-  width: 18430px;
+  width: 17460px;
 }
 .horizontal .students .student {
   width: 960px;
@@ -53,6 +53,9 @@ body {
   padding-right: 40px;
   border-right: 2px solid #e2e2e2;
   margin-right: 10px;
+}
+.horizontal .students .student h4 {
+  font-weight: bolder;
 }
 .horizontal .students .student ul {
   padding: 0;

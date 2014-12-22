@@ -77,10 +77,11 @@ html(ng-app='class', lang='en')
             .col-xs-6
               h3 {{student.name}}
               p {{student.desc}}
+              h4: a(href='{{student.url}}', target='_blank') Portfolio Website
               ul
-                li: a(href='{{student.github}}'): i.fa.fa-github-square.fa-2x
-                li: a(href='{{student.linkedin}}'): i.fa.fa-linkedin-square.fa-2x
-                li: a(href='{{student.twitter}}'): i.fa.fa-twitter-square.fa-2x
+                li: a(href='{{student.github}}', target='_blank'): i.fa.fa-github-square.fa-2x
+                li: a(href='{{student.linkedin}}', target='_blank'): i.fa.fa-linkedin-square.fa-2x
+                li: a(href='{{student.twitter}}', target='_blank'): i.fa.fa-twitter-square.fa-2x
                   
                 
           .clearfix
