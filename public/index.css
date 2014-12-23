@@ -1,66 +1,283 @@
 body {
   background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+}
+img.desaturate {
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+img.desaturate:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none;
 }
 .hello {
   width: 100%;
-  height: 400px;
+  height: auto;
   padding: 40px;
   margin: 90px 0 0 0;
 }
 .hello h1 {
   font-weight: bold;
   color: #66cdaa;
-  font-size: 5em;
+  font-size: 3em;
 }
 .hello h2 {
-  font-size: 2em;
+  font-size: 1.25em;
 }
-.construction {
-  background-color: #66cdaa;
+.pic {
+  background-color: white;
+  height: auto;
+  padding: 40px 40px 0;
+}
+.pic .group-img img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.about {
+  background-color: white;
+  height: auto;
+  padding: 5px 40px;
+}
+.about h2 {
+  text-align: center;
+}
+.meet-nav {
+  padding: 20px;
+  margin: 10px;
+}
+.meet-nav div,
+.meet-nav div > a,
+.meet-nav div > p {
+  display: inline;
+}
+.horizontal {
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  overflow: auto;
+}
+.horizontal .students {
+  width: 6500px;
+}
+.horizontal .students .student {
+  width: 350px;
+  float: left;
+  padding-right: 40px;
+  border-right: 2px solid #e2e2e2;
+  margin-right: 10px;
+}
+.horizontal .students .student img {
+  width: 200px;
+  margin: 0 auto;
+}
+.horizontal .students .student h4 {
+  font-weight: bolder;
+}
+.horizontal .students .student ul {
+  padding: 0;
+}
+.horizontal .students .student ul > li {
+  list-style: none;
+  display: inline;
+  margin: 10px;
+}
+.hack {
+  height: auto;
+  padding: 40px;
+  background-color: white;
+}
+.hack img {
+  border: 1px solid grey;
+  margin: 0 auto;
+  display: block;
+  border-radius: 5px;
+}
+.hack ul {
+  list-style: none;
+  padding: 0;
+}
+.hack ul li.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f85c37;
+  line-height: 26px;
+  margin-top: 20px;
+}
+.hack ul.participants > li {
+  font-weight: normal;
+  color: black;
+  line-height: 26px;
+}
+.featured {
   padding: 20px;
 }
-.construction h3 {
-  color: #f7f7f7;
-  font-weight: 700;
-}
-.meet ul {
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #eee;
-}
-.meet ul i {
-  margin: 40px auto;
-  color: #eee;
-}
-.meet ul > a {
-  list-style: none;
+.featured .project {
   display: inline-block;
-  width: 25%;
-  height: 300px;
-  border: 2px solid #eee;
-  font-size: 30px;
+}
+.featured .project img {
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+footer {
+  height: auto;
+  padding: 10px;
+  background-color: white;
+}
+footer .contact {
+  border-top: 2px solid #f7f7f7;
+  text-align: right;
+}
+footer .contact,
+footer .copy,
+footer .thanks {
+  padding: 20px;
+}
+footer .contact h3,
+footer .copy h3,
+footer .thanks h3 {
+  color: #66cdaa;
+}
+footer .contact .copy,
+footer .copy .copy,
+footer .thanks .copy {
   text-align: center;
-  vertical-align: middle;
-  transition: background 1s;
-  -moz-transition: background 1s;
-  /* Firefox 4 */
-  -webkit-transition: background 1s;
-  /* Safari and Chrome */
-  -o-transition: background 1s;
-  /* Opera */
 }
-.meet ul > a:hover {
-  background-color: rgba(248, 92, 55, 0.49);
-  color: #f7f7f7;
-  font-weight: 700;
+footer .contact .nss-logo,
+footer .copy .nss-logo,
+footer .thanks .nss-logo {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
 }
-.meet ul > a:active {
-  background-color: rgba(248, 92, 55, 0.49);
-  color: #f7f7f7;
-  font-weight: 700;
-}
-@media (max-width: 960px) {
-  .meet ul > a {
-    width: 50%;
+@media (min-width: 768px) {
+  .hello {
+    width: 100%;
+    height: 350px;
+    padding: 40px;
+    margin: 90px 0 0 0;
+  }
+  .hello h1 {
+    font-weight: bold;
+    color: #66cdaa;
+    font-size: 5em;
+  }
+  .hello h2 {
+    font-size: 2em;
+  }
+  .about {
+    height: auto;
+    padding: 40px;
+  }
+  .about .desc {
+    padding: 40px;
+    -webkit-column-count: 2;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 2;
+    /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px;
+    /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px;
+    /* Firefox */
+    column-gap: 40px;
+  }
+  .meet {
+    background-color: transparent;
+    height: auto;
+    padding: 40px;
+  }
+  .meet .meet-nav {
+    padding: 20px;
+    margin: 10px;
+  }
+  .meet .meet-nav div,
+  .meet .meet-nav div > a,
+  .meet .meet-nav div > p {
+    display: inline;
+  }
+  .meet .horizontal {
+    padding: 20px;
+    height: 470px;
+    width: 100%;
+    overflow: auto;
+  }
+  .meet .horizontal .students {
+    width: 17460px;
+  }
+  .meet .horizontal .students .student {
+    width: 960px;
+    float: left;
+    padding-right: 40px;
+    border-right: 2px solid #e2e2e2;
+    margin-right: 10px;
+  }
+  .meet .horizontal .students .student img {
+    max-width: 427px;
+    width: 100%;
+  }
+  .meet .horizontal .students .student h4 {
+    font-weight: bolder;
+  }
+  .meet .horizontal .students .student ul {
+    padding: 0;
+  }
+  .meet .horizontal .students .student ul > li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+  }
+  .hack {
+    height: auto;
+    padding: 40px;
+  }
+  .hack ul {
+    margin: 0;
+  }
+  .hack h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #66cdaa;
+  }
+  .hack h4 {
+    margin-left: 2%;
+  }
+  .featured {
+    height: auto;
+    padding: 40px;
+  }
+  .featured .project {
+    max-width: 300px;
+    width: 33.33333333%;
+    margin: 3%;
+  }
+  .featured .project a:hover {
+    background-color: white;
+  }
+  footer {
+    height: 450px;
+    padding: 40px;
+  }
+  footer ul {
+    margin: 0;
+  }
+  footer li {
+    list-style: none;
+    line-height: 20px;
+  }
+  footer .contact {
+    border: none;
+  }
+  footer .contact .copy {
+    text-align: right;
+  }
+  footer .contact .nss-logo {
+    display: inline;
   }
 }

@@ -4,72 +4,291 @@
 
 body {
   background-color: @background;
+  -webkit-font-smoothing: antialiased;
+}
+img.desaturate {
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+img.desaturate:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none;
+
 }
 .hello {
   width: 100%;
-  height: 400px;
+  height: auto;
   padding: 40px;
   margin: 90px 0 0 0;
 
   h1 {
     font-weight: bold;
     color: @green;
-    font-size: 5em;
+    font-size: 3em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 1.25em;
   }
 }
-.construction {
-  background-color: @green;
+.pic {
+  background-color: white;
+  height: auto;
+  padding: 40px 40px 0;
+
+  .group-img img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}
+.about {
+  background-color: white;
+  height: auto;
+  padding: 5px 40px;
+
+  h2 {
+    text-align: center;
+  }
+}
+.meet-nav {
+  padding: 20px;
+  margin: 10px;
+  div, div > a, div > p {
+    display: inline;
+  }
+}
+.horizontal {
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  overflow:auto;
+
+  .students {
+    width: 6500px;
+
+    .student {
+      width: 350px;
+      float: left;
+      padding-right: 40px;
+      border-right: 2px solid #e2e2e2;
+      margin-right: 10px;
+      img {
+        width: 200px;
+        margin: 0 auto;
+      }
+      h4 {
+        font-weight: bolder;
+      }
+      ul {
+        padding: 0;
+      }
+      ul > li {
+        list-style: none;
+        display: inline;
+        margin: 10px;
+      }
+    }
+  }
+}
+.hack {
+  height: auto;
+  padding: 40px;
+  background-color: white;
+
+  img {
+    border: 1px solid grey;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li.title {
+      font-size: 18px;
+      font-weight: bold;
+      color: @orange;
+      line-height: 26px;
+      margin-top: 20px;
+    }
+  }
+  ul.participants > li {
+    font-weight: normal;
+    color: black;
+    line-height: 26px;
+  }
+}
+.featured {
   padding: 20px;
 
-  h3 {
-    color: @background;
-    font-weight: 700;
-  }
-}
-.meet {
-  ul {
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #eee;
-
-    i {
-      margin: 40px auto;
-      color: #eee;
-    }
-  }
-  ul>a {
-    list-style: none;
+  .project {
     display: inline-block;
-    width: 100%/4;
-    height: 300px;
-    border: 2px solid #eee;
-    font-size: 30px;
-    text-align: center;
-    vertical-align: middle;
-    transition: background 1s;
-    -moz-transition: background 1s; /* Firefox 4 */
-    -webkit-transition: background 1s; /* Safari and Chrome */
-    -o-transition: background 1s; /* Opera */
-  }
-  ul>a:hover {
-    background-color: rgba(248, 92, 55, 0.49);
-    color: @background;
-    font-weight: 700;
-
-  }
-  ul>a:active {
-    background-color: rgba(248, 92, 55, 0.49);
-    color: @background;
-    font-weight: 700;
-  }
-}
-@media (max-width: 960px){
-  .meet {
-    ul>a {
-      width: 100%/2;
+    img {
+      border-radius: 5px;
+      border: 1px solid #aaa;
     }
   }
+}
+footer {
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  .contact {
+    border-top: 2px solid @background;
+    text-align: right;
+  }
+  .contact, .copy, .thanks {
+    padding: 20px;
+
+    h3 {
+      color: @green;
+    }
+    .copy {
+      text-align: center;
+    }
+    .nss-logo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .hello {
+    width: 100%;
+    height: 350px;
+    padding: 40px;
+    margin: 90px 0 0 0;
+
+    h1 {
+      font-weight: bold;
+      color: @green;
+      font-size: 5em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+  }
+  .about {
+    height: auto;
+    padding: 40px;
+
+    .desc {
+      padding: 40px;
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 40px; /* Firefox */
+      column-gap: 40px;
+    }
+  }
+  .meet {
+    background-color: transparent;
+    height: auto;
+    padding: 40px;
+
+    .meet-nav {
+      padding: 20px;
+      margin: 10px;
+      div, div > a, div > p {
+        display: inline;
+      }
+    }
+    .horizontal {
+      padding: 20px;
+      height: 470px;
+      width: 100%;
+      overflow:auto;
+
+      .students {
+        width: 18*970px;
+
+        .student {
+          width: 960px;
+          float: left;
+          padding-right: 40px;
+          border-right: 2px solid #e2e2e2;
+          margin-right: 10px;
+          img {
+            max-width: 427px;
+            width: 100%;
+          }
+          h4 {
+            font-weight: bolder;
+          }
+          ul {
+            padding: 0;
+          }
+          ul > li {
+            list-style: none;
+            display: inline;
+            margin: 10px;
+          }
+        }
+      }
+    }
+
+  }
+  .hack {
+    height: auto;
+    padding: 40px;
+    ul {
+      margin: 0;
+    }
+    h3 {
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: @green;
+    }
+    h4 {
+      margin-left: 2%;
+    }
+  }
+  .featured {
+    height: auto;
+    padding: 40px;
+    .project {
+      max-width: 300px;
+      width: 100%/3;
+      margin: 3%;
+
+      a:hover {
+        background-color: white;
+      }
+    }
+  }
+  footer {
+    height: 450px;
+    padding: 40px;
+    ul {
+      margin: 0;
+
+    }
+    li {
+      list-style: none;
+      line-height: 20px;
+    }
+    .contact {
+      border: none;
+
+      .copy {
+        text-align: right;
+      }
+      .nss-logo {
+        display: inline;
+      }
+    }
+  }
+}
+@media (min-width: 640px){
+
 }

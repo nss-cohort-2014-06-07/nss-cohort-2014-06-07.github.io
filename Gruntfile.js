@@ -9,7 +9,7 @@ module.exports = function(grunt){
         separator: ';'
       },
       dist: {
-        src: ['client/**/*.js'],
+        src: ['client/index.js', 'client/class.js'],
         dest: 'public/<%= pkg.name %>.js'
       }
     },
@@ -82,9 +82,15 @@ module.exports = function(grunt){
     },
     // ---------------------------------------------------------------------- //
     copy: {
+      bower: {
+        cwd: '.',
+        src: ['bower_components/**'],
+        dest: 'public',
+        expand: true
+      },
       js: {
         cwd: 'client',
-        src: ['**/*.js'],
+        src: ['**/*.js', '**/*.json'],
         dest: 'public',
         expand: true
       },
@@ -115,6 +121,6 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('serve', ['connect', 'watch']);
-  grunt.registerTask('build', ['jshint:all', 'jade', 'less', 'concat', 'uglify', 'copy:js', 'copy:assets', 'copy:favicon']);
+  grunt.registerTask('build', ['jshint:all', 'jade', 'less', 'concat', 'uglify', 'copy:bower', 'copy:js', 'copy:assets', 'copy:favicon']);
   grunt.registerTask('default', ['build', 'connect', 'watch']);
 };
