@@ -45,7 +45,7 @@ img.desaturate:hover {
   padding: 5px 40px;
 }
 .about h2 {
-  text-align: center;
+  display: none;
 }
 .meet-nav {
   padding: 20px;
@@ -129,6 +129,13 @@ footer {
   padding: 10px;
   background-color: white;
 }
+footer ul {
+  margin: 0;
+}
+footer li {
+  list-style: none;
+  line-height: 20px;
+}
 footer .contact {
   border-top: 2px solid #f7f7f7;
   text-align: right;
@@ -174,6 +181,10 @@ footer .thanks .nss-logo {
   .about {
     height: auto;
     padding: 40px;
+  }
+  .about h2 {
+    display: block;
+    text-align: center;
   }
   .about .desc {
     padding: 40px;
@@ -263,13 +274,6 @@ footer .thanks .nss-logo {
   footer {
     height: 450px;
     padding: 40px;
-  }
-  footer ul {
-    margin: 0;
-  }
-  footer li {
-    list-style: none;
-    line-height: 20px;
   }
   footer .contact {
     border: none;

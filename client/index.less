@@ -52,7 +52,7 @@ img.desaturate:hover {
   padding: 5px 40px;
 
   h2 {
-    text-align: center;
+    display: none;
   }
 }
 .meet-nav {
@@ -139,6 +139,15 @@ footer {
   height: auto;
   padding: 10px;
   background-color: white;
+
+  ul {
+    margin: 0;
+
+  }
+  li {
+    list-style: none;
+    line-height: 20px;
+  }
   .contact {
     border-top: 2px solid @background;
     text-align: right;
@@ -180,6 +189,11 @@ footer {
   .about {
     height: auto;
     padding: 40px;
+
+    h2 {
+      display: block;
+      text-align: center;
+    }
 
     .desc {
       padding: 40px;
@@ -269,14 +283,7 @@ footer {
   footer {
     height: 450px;
     padding: 40px;
-    ul {
-      margin: 0;
 
-    }
-    li {
-      list-style: none;
-      line-height: 20px;
-    }
     .contact {
       border: none;
 
