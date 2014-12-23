@@ -14,7 +14,6 @@
 
     $http.get('/public/data/student-info.json').success(function(results){
       $scope.students = results;
-      console.log(results);
     });
 
   }]);
