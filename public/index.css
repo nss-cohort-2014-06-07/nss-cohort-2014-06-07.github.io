@@ -1,5 +1,19 @@
 body {
   background-color: #f7f7f7;
+  -webkit-font-smoothing: antialiased;
+}
+img.desaturate {
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+img.desaturate:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none;
 }
 .hello {
   width: 100%;
@@ -95,8 +109,12 @@ body {
 .featured {
   padding: 20px;
 }
-.featured div {
+.featured .project {
   display: inline-block;
+}
+.featured .project img {
+  border-radius: 5px;
+  border: 1px solid #aaa;
 }
 footer {
   height: auto;
@@ -168,7 +186,7 @@ footer .thanks .nss-logo {
     padding: 40px;
   }
   .hack {
-    height: 500px;
+    height: auto;
     padding: 40px;
   }
   .hack ul {
@@ -183,8 +201,16 @@ footer .thanks .nss-logo {
     margin-left: 2%;
   }
   .featured {
-    height: 450px;
+    height: auto;
     padding: 40px;
+  }
+  .featured .project {
+    max-width: 300px;
+    width: 33.33333333%;
+    margin: 3%;
+  }
+  .featured .project a:hover {
+    background-color: white;
   }
   footer {
     height: 450px;
