@@ -4,6 +4,21 @@
 
 body {
   background-color: @background;
+  -webkit-font-smoothing: antialiased;
+}
+img.desaturate {
+  -webkit-filter: grayscale(1);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+}
+img.desaturate:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none;
+
 }
 .hello {
   width: 100%;
@@ -20,22 +35,65 @@ body {
     font-size: 1.25em;
   }
 }
+.pic {
+  background-color: white;
+  height: auto;
+  padding: 40px 40px 0;
+
+  .group-img img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+}
 .about {
   background-color: white;
   height: auto;
   padding: 40px;
 
-  .group-img img {
-      display: block;
-      margin: 0 auto;
-      border-radius: 5px;
-  }
-  .desc {
-    padding: 10px;
+  h2 {
+    text-align: center;
   }
 }
-.meet {
+.meet-nav {
   padding: 20px;
+  margin: 10px;
+  div, div > a, div > p {
+    display: inline;
+  }
+}
+.horizontal {
+  padding: 20px;
+  height: auto;
+  width: 100%;
+  overflow:auto;
+
+  .students {
+    width: 6500px;
+
+    .student {
+      width: 350px;
+      float: left;
+      padding-right: 40px;
+      border-right: 2px solid #e2e2e2;
+      margin-right: 10px;
+      img {
+        width: 200px;
+        margin: 0 auto;
+      }
+      h4 {
+        font-weight: bolder;
+      }
+      ul {
+        padding: 0;
+      }
+      ul > li {
+        list-style: none;
+        display: inline;
+        margin: 10px;
+      }
+    }
+  }
 }
 .hack {
   height: auto;
@@ -69,8 +127,12 @@ body {
 .featured {
   padding: 20px;
 
-  div {
+  .project {
     display: inline-block;
+    img {
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
   }
 }
 footer {
@@ -102,7 +164,7 @@ footer {
 @media (min-width: 768px){
   .hello {
     width: 100%;
-    height: 400px;
+    height: 350px;
     padding: 40px;
     margin: 90px 0 0 0;
 
@@ -116,20 +178,68 @@ footer {
     }
   }
   .about {
-    height: 450px;
+    height: auto;
     padding: 40px;
 
     .desc {
       padding: 40px;
+      -webkit-column-count: 2; /* Chrome, Safari, Opera */
+      -moz-column-count: 2; /* Firefox */
+      column-count: 2;
+      -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 40px; /* Firefox */
+      column-gap: 40px;
     }
   }
   .meet {
     background-color: transparent;
-    height: 450px;
+    height: auto;
     padding: 40px;
+
+    .meet-nav {
+      padding: 20px;
+      margin: 10px;
+      div, div > a, div > p {
+        display: inline;
+      }
+    }
+    .horizontal {
+      padding: 20px;
+      height: 470px;
+      width: 100%;
+      overflow:auto;
+
+      .students {
+        width: 18*970px;
+
+        .student {
+          width: 960px;
+          float: left;
+          padding-right: 40px;
+          border-right: 2px solid #e2e2e2;
+          margin-right: 10px;
+          img {
+            max-width: 427px;
+            width: 100%;
+          }
+          h4 {
+            font-weight: bolder;
+          }
+          ul {
+            padding: 0;
+          }
+          ul > li {
+            list-style: none;
+            display: inline;
+            margin: 10px;
+          }
+        }
+      }
+    }
+
   }
   .hack {
-    height: 500px;
+    height: auto;
     padding: 40px;
     ul {
       margin: 0;
@@ -144,13 +254,29 @@ footer {
     }
   }
   .featured {
-    height: 450px;
+    height: auto;
     padding: 40px;
+    .project {
+      max-width: 300px;
+      width: 100%/3;
+      margin: 3%;
+
+      a:hover {
+        background-color: white;
+      }
+    }
   }
   footer {
     height: 450px;
     padding: 40px;
+    ul {
+      margin: 0;
 
+    }
+    li {
+      list-style: none;
+      line-height: 20px;
+    }
     .contact {
       border: none;
 

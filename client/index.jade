@@ -1,5 +1,5 @@
 doctype html
-html(lang='en')
+html(ng-app='class', lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
@@ -46,58 +46,46 @@ html(lang='en')
           .col-lg-8.col-lg-offset-2.centered
             h1 Hello World!
             h2 Meet NSS : Cohort VI
+    .pic#pic
+      .col-sm-12.group-img
+        img.img-responsive(src='/public/assets/group1.jpg', alt='Photo of the Class.')
     .about#about
-      .col-sm-6.group-img
-        img.img-responsive(src='/public/assets/group.jpg', alt='Photo of the Class.')
-      .col-sm-6.desc
-        h3 Nashville Software School's Cohort Six
-        h4 I'll put this over here, with the rest of the fire. I'll put this over 
-          | here, with the rest of the fire. Oh my God. I didn't even know Smarties 
-          | made a cereal. They don't. It's just Smarties in a bowl with milk. 0115... 
-          | no... 0118... no... 0118 999 ... 3. Hello? Is this the emergency services? 
-          | Then which country am I speaking to? Hello? Hello? 
-      
-    .meet#meet
-      h2 Meet the Students
-      p slider in here...
-      //slider here, existing links below
-        a(href='http://zoeames.github.io/', target='_blank'): li Zo&euml; Ames
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://mikeyb.net', target='_blank'): li Mikey Badr
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://www.adambarnhard.com/'): li Adam Barnhard
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://mikebbarreiro.github.io/', target='_blank'): li Michael Barreiro
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://daviddboling.com', target='_blank'): li Dave Boling
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://lizahcarter.github.io/', target='_blank'): li Liza Carter
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://melanie.fryman.io/', target='_blank'): li Melanie Fryman
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://portfolio.bchiatt.co', target='_blank'): li Brian Hiatt
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://portfolio.kaylalynjones.ninja', target='_blank'): li Kayla Jones
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://mkeef1.com', target='_blank'): li Matt Keef 
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://sarahmpearson.github.io/', target='_blank'): li Sarah Pearson
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://portfolio.joympratt.com', target='_blank'): li Joy Pratt &nbsp;
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://glogandr.github.io/', target='_blank'): li Logan Richardson
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://www.dsroden.com', target='_blank'): li Daniel Roden 
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='#'): li Juan Job Rodriguez 
-          //a(href='http://portfolio.juanjob.info' >>>http://jjsub.github.io/, target='_blank'): li Juan Rodriguez
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://shrutijalewar.github.io/', target='_blank'): li Shruti Sharma
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://dennis-stanley.com', target='_blank'): li Dennis Stanley
-          i.fa.fa-link.fa-fw.fa-5x
-        a(href='http://superartie.github.io/', target='_blank'): li Nathan Vasquez
-          i.fa.fa-link.fa-fw.fa-5x
+      .col-sm-12
+        h2 A little bit about the class.
+      .col-sm-12.desc
+        h3 After six months of training, thousand of lines of code, and gallons of coffee, we're ready for the coding 
+          | challenges of tomorrow.
+        p The Web Developer Bootcamp is a six-month, full-time program. The curriculum teaches the skills and technologies 
+          | required to become a junior full-stack software developer.
+          | Cohort Six focused on a full JavaScript stack, building the frontend chops to create websites, web apps, 
+          | and hybrid mobile applications with HTML, CSS, JavaScript, jQuery, AngularJS, and Ionic.
+          | We laid down a solid foundation in general software engineering and server­-side development concepts, 
+          | e.g. test­-driven development, object­-oriented programming, pair programming, 
+          | source code control in a team environment, common code patterns, NoSQL and SQL databases with NodeJS, Express, 
+          | Hapi, MongoDB, and Postgresql.
+    .row
+      .meet#meet(ng-controller='ClassCtrl')
+        .meet-nav
+          h2 Meet Us
+          div(ng-repeat='student in students')
+            a(href='{{ "#" + student.name}}') {{student.name}} &nbsp;
+            p &bull; &nbsp;
+        .horizontal
+          .students
+            section.student(ng-repeat='student in students', id='{{student.name}}')
+              .col-sm-6
+                img.img-responsive(ng-src='{{student.photo}}' alt='photo of {{student.name}}')
+              .col-sm-6
+                h3 {{student.name}}
+                p {{student.desc}}
+                h4: a(href='{{student.url}}', target='_blank') Portfolio Website
+                ul
+                  li: a(href='{{student.github}}', target='_blank'): i.fa.fa-github-square.fa-2x
+                  li: a(href='{{student.linkedin}}', target='_blank'): i.fa.fa-linkedin-square.fa-2x
+                  li: a(href='{{student.twitter}}', target='_blank'): i.fa.fa-twitter-square.fa-2x
+                  
+                
+            .clearfix
   .hack
     .row
       .col-xs-12
@@ -135,21 +123,40 @@ html(lang='en')
           
   .featured
     h2 Featured Projects
-    p selected projects here. 3-6
+    .project
+      h3 The Collectivist
+      a(href='http://collectivist.failureengine.com/#/', target='_blank'): img.img-responsive.desaturate(src='public/assets/collect.jpg', target='_blank')
+    .project
+      h3 Nashville Investor
+      a(href='http://nashvestor.adambarnhard.com/#/', target='_blank'): img.img-responsive.desaturate(src='public/assets/property.jpg', target='_blank')
+    .project
+      h3 EnlighTN
+      a(href='http://enlightn.bchiatt.co/#/', target='_blank'): img.img-responsive.desaturate(src='public/assets/enlighTN.png')
   footer
     .col-md-6.thanks
       h3 Special Thanks To:
       h4 Our amazing teacher: Chyld Medford.
-      h5 Our fantastic TAs:
-      h5 The students for developing this site.
+      h4 Our fantastic TAs! 
+      ul
+        li Scott Humphries
+        li MaRisa Jackson
+        li Adam Keesecker
+        li Tyler Malone
+        li Bob Paterno
+        li JL Phillips 
+      h4 Our awesome photographer Inge Kathleen, 
+        a(href='http://www.ingekathleen.com/', target='_blank') visit her site.
+      h5 Kayla Jones and Brian Hiatt for developing this site.
         
-    .col-md-6.contact
+    .col-md-6.contact#contact
       a(href='http://nashvillesoftwareschool.com/'): img.nss-logo(src='/public/assets/nss.png', alt='nss')
       .row
         .col-xs-12.copy
           small &copy;Nashville Software School
       
       
-
-    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='public/bower_components/jquery/dist/jquery.min.js')
+    script(src='public/bower_components/angular/angular.min.js')
+    script(src='public/bower_components/angular-route/angular-route.min.js')
+    script(src='public/nss-cohort-2014-06-07.github.io.min.js')
     script(src='vendor/bootstrap/js/bootstrap.js')
