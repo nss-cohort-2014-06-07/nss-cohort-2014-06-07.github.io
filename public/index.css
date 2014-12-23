@@ -47,6 +47,10 @@ img.desaturate:hover {
 .about h2 {
   text-align: center;
 }
+.meet-nav {
+  padding: 20px;
+  margin: 10px;
+}
 .meet-nav div,
 .meet-nav div > a,
 .meet-nav div > p {
@@ -54,19 +58,23 @@ img.desaturate:hover {
 }
 .horizontal {
   padding: 20px;
-  height: 470px;
+  height: auto;
   width: 100%;
   overflow: auto;
 }
 .horizontal .students {
-  width: 17460px;
+  width: 6500px;
 }
 .horizontal .students .student {
-  width: 960px;
+  width: 350px;
   float: left;
   padding-right: 40px;
   border-right: 2px solid #e2e2e2;
   margin-right: 10px;
+}
+.horizontal .students .student img {
+  width: 200px;
+  margin: 0 auto;
 }
 .horizontal .students .student h4 {
   font-weight: bolder;
@@ -184,6 +192,46 @@ footer .thanks .nss-logo {
     background-color: transparent;
     height: auto;
     padding: 40px;
+  }
+  .meet .meet-nav {
+    padding: 20px;
+    margin: 10px;
+  }
+  .meet .meet-nav div,
+  .meet .meet-nav div > a,
+  .meet .meet-nav div > p {
+    display: inline;
+  }
+  .meet .horizontal {
+    padding: 20px;
+    height: 470px;
+    width: 100%;
+    overflow: auto;
+  }
+  .meet .horizontal .students {
+    width: 17460px;
+  }
+  .meet .horizontal .students .student {
+    width: 960px;
+    float: left;
+    padding-right: 40px;
+    border-right: 2px solid #e2e2e2;
+    margin-right: 10px;
+  }
+  .meet .horizontal .students .student img {
+    max-width: 427px;
+    width: 100%;
+  }
+  .meet .horizontal .students .student h4 {
+    font-weight: bolder;
+  }
+  .meet .horizontal .students .student ul {
+    padding: 0;
+  }
+  .meet .horizontal .students .student ul > li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
   }
   .hack {
     height: auto;

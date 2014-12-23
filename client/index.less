@@ -56,25 +56,36 @@ img.desaturate:hover {
   }
 }
 .meet-nav {
+  padding: 20px;
+  margin: 10px;
   div, div > a, div > p {
     display: inline;
   }
 }
 .horizontal {
   padding: 20px;
-  height: 470px;
+  //height: 470px;
+  height: auto;
   width: 100%;
   overflow:auto;
 
   .students {
-    width: 18*970px;
+    //width: 18*970px;
+    width: 6500px;
 
     .student {
-      width: 960px;
+      width: 350px;
+      //width: 960px;
       float: left;
       padding-right: 40px;
       border-right: 2px solid #e2e2e2;
       margin-right: 10px;
+      img {
+        // max-width: 427px;
+        // width: 100%;
+        width: 200px;
+        margin: 0 auto;
+      }
       h4 {
         font-weight: bolder;
       }
@@ -189,6 +200,48 @@ footer {
     background-color: transparent;
     height: auto;
     padding: 40px;
+
+    .meet-nav {
+      padding: 20px;
+      margin: 10px;
+      div, div > a, div > p {
+        display: inline;
+      }
+    }
+    .horizontal {
+      padding: 20px;
+      height: 470px;
+      width: 100%;
+      overflow:auto;
+
+      .students {
+        width: 18*970px;
+
+        .student {
+          width: 960px;
+          float: left;
+          padding-right: 40px;
+          border-right: 2px solid #e2e2e2;
+          margin-right: 10px;
+          img {
+            max-width: 427px;
+            width: 100%;
+          }
+          h4 {
+            font-weight: bolder;
+          }
+          ul {
+            padding: 0;
+          }
+          ul > li {
+            list-style: none;
+            display: inline;
+            margin: 10px;
+          }
+        }
+      }
+    }
+
   }
   .hack {
     height: auto;
