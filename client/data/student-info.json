@@ -1,6 +1,6 @@
 [{
     "name":"Zoë Ames",
-    "desc":"",
+    "desc":"Zoe realized her passion for coding while completing her masters degree in physics. As a trained physicist, Zoe has a rich background in programming and analytical problem solving. Most comfortable in JavaScript, Zoe is a full stack developer with additional experience using Python. Zoe really enjoys working with Node and Angular to develop cool apps that people can use every day!",
     "linkedin": "https://www.linkedin.com/in/zoeames",
     "twitter":"https://twitter.com/zoe_ames",
     "github":"https://github.com/zoeames",
@@ -28,7 +28,7 @@
   {
     "name":"Michael Barreiro",
     "desc":"",
-    "linkedin": "#",
+    "linkedin": "",
     "twitter":"https://twitter.com/l8MikeBl8",
     "github":"https://github.com/MikeBBarreiro",
     "photo":"public/assets/michael.jpg",
@@ -54,7 +54,7 @@
   },
   {
     "name":"Melanie Fryman",
-    "desc":"",
+    "desc":"Melanie Fryman is a Full Stack web developer with experience in JavaScript, Angular, PostgreSQL, MongoDB, and many other frameworks. She is not ashamed of her love for all things data, and gets giddy at the thought of graphs and statistics. Having worked as an education program evaluator for the past three years, Melanie looks forward to new challenges and incorporating her programming skills with her love of data analysis in the never-ending quest for (practical) science! As a long term Nashvillian, she seeks opportunities to contribute to her local community. Melanie holds a B.S. in sociology from Tennessee State University in Nashville and a M.A. in sociology from Middle Tennessee State University in Murfreesboro.",
     "linkedin": "https://www.linkedin.com/in/mlfryman",
     "twitter":"https://twitter.com/mlfryman",
     "github":"https://github.com/mlfryman",
@@ -72,7 +72,7 @@
   },
   {
     "name":"Kayla Jones",
-    "desc":"",
+    "desc":"Kayla has taken her abilities as a visual artist and applied them to Web Design and Development. As primarily a Front-end Developer, she loves to create beautiful digital experiences that merge functionality and design.",
     "linkedin": "https://www.linkedin.com/in/kaylalynjones/",
     "twitter":"https://twitter.com/grandtraipse",
     "github":"https://github.com/kaylalynjones",
@@ -90,7 +90,7 @@
   },
   {
     "name":"Sarah Pearson",
-    "desc":"",
+    "desc":"Sarah Pearson is a music business professional turned developer and designer with a passion for front-end development and making applications that are smart, intuitive and easy to maneuver.",
     "linkedin": "https://www.linkedin.com/in/sarahpearson/",
     "twitter":"https://twitter.com/SassPearson",
     "github":"https://github.com/SarahMPearson",
@@ -99,7 +99,7 @@
   },
   {
     "name":"Joy Pratt",
-    "desc":"",
+    "desc":"Joy has a background in healthcare with over ten years experience as a radiologic technologist. She has worked extensively with mammography data and statistics. She is excited about using her programming skills to explore new opportunities in the tech world.",
     "linkedin": "https://www.linkedin.com/in/joypratt",
     "twitter":"https://twitter.com/joympratt",
     "github":"https://github.com/JoyP",
@@ -109,7 +109,7 @@
   {
     "name":"Logan Richardson",
     "desc":"",
-    "linkedin": "#",
+    "linkedin": "",
     "twitter":"https://twitter.com/Glogandr",
     "github":"https://github.com/GLoganDR",
     "photo":"public/assets/logan.jpg",
@@ -118,7 +118,7 @@
   {
     "name":"Daniel Roden",
     "desc":"Daniel is a coder and designer with a background in neuroscience and fine art.",
-    "linkedin": "#",
+    "linkedin": "https://www.linkedin.com/profile/view?id=71901008",
     "twitter":"https://twitter.com/dsroden",
     "github":"https://github.com/DSRoden",
     "photo":"public/assets/daniel.jpg",
@@ -126,17 +126,17 @@
   },
   {
     "name":"Juan Job Rodriguez",
-    "desc":" I am software engineer and web developer who cares about people.",
-    "linkedin": "http://www.linkedin.com/pub/juan-job-rodriguez/80/552/7a3/",
+    "desc":" I am software engineer and web developer.",
+    "linkedin": "https://www.linkedin.com/pub/juan-job-rodriguez/80/552/7a3",
     "twitter":"https://twitter.com/JuanJob11",
     "github":"https://github.com/jjsub",
     "photo":"public/assets/juan.jpg",
-    "url": "http://portfolio.juanjob.info"
+    "url": "http://juanjob.info "
   },
   {
     "name":"Shruti Sharma",
-    "desc":"",
-    "linkedin": "https://www.linkedin.com/profile/view?id=41234822",
+    "desc":"Developer, Data Enthusiast, Scientist seeking to build applications that impact lives.",
+    "linkedin": "https://www.linkedin.com/in/shrutijalewar",
     "twitter":"https://twitter.com/shrutijalewar",
     "github":"https://github.com/shrutijalewar",
     "photo":"public/assets/shruti.jpg",
@@ -144,8 +144,8 @@
   },
   {
     "name":"Dennis Stanley",
-    "desc":"",
-    "linkedin": "#",
+    "desc":"While in Nashville software school, Dennis has gained experience in: JavaScript, Node, Angular, Hapi, Express, MongoDB, and many other technologies. His previous education consists of studying advertising and art, where he received a bachelors of science in advertising from Middle Tennessee State University. He’s passionate about continuing to build on the knowledge he has gained at NSS, with his interest leaning more towards the frontend.",
+    "linkedin": "www.linkedin.com/in/TyroneDStanley",
     "twitter":"https://twitter.com/TDSjr82",
     "github":"https://github.com/tdsj82",
     "photo":"public/assets/dennis.jpg",
