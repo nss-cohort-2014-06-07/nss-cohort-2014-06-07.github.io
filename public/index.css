@@ -119,6 +119,8 @@ img.desaturate:hover {
 }
 .featured .project {
   display: inline-block;
+  max-width: 300px;
+  width: 100%;
 }
 .featured .project img {
   border-radius: 5px;
